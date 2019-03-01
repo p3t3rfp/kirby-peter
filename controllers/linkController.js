@@ -6,3 +6,5 @@ const linkController = {
     },
 
 }
+
+module.exports = linkController 
