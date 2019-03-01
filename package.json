@@ -1,0 +1,24 @@
+{
+  "name": "kirpter",
+  "version": "1.0.0",
+  "description": "For this lab, you will be creating a backend for a completed frontend application. You will be working on an app called \"GAphy\" which will display a bunch of Gifs.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/kirbylauve/express-api-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "hbs": "^4.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.16",
+    "morgan": "^1.9.1"
+  }
+}
