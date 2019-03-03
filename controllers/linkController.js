@@ -7,10 +7,13 @@ const linkController = {
         })
     },
     new: (req, res) => {
-        res.send('Hi from the new view')
+        res.render('new')
     },
     create: (req, res) => {
-        res.send('hi from create post')
+        Link.create(req.body)
+            .then(link => {
+                res.redirect('/')
+            })
     },
     show: (req, res) => {
         let { linkId } = req.params
