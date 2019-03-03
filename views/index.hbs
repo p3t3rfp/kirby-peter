@@ -1,0 +1,31 @@
+<div class="container">
+    <a class="btn btn-info" href="/new">+ Add Thought</a>
+
+    <h2 class="text-center">Stupid people's thoughts</h2>
+
+    {{#each links}}
+        <div class="row review">
+            <div class="col-sm-8">
+            <div class="col-sm-4">
+                <p><a href="#">{{url}}</a></p>
+            </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>
+                            <a href='/{{_id}}'>{{title}}</a>
+                        </h4>
+                        {{date}}
+                    </div>
+                    <div class="col-sm-6">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col review-quote">
+                        {{desc}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

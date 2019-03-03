@@ -1,0 +1,17 @@
+<div class="container">
+    {{!-- <h2 class="text-center">{{link.title}}</h2> --}}
+    <div class="text-center">
+        {{!-- <img class="shop-img-banner" src={{shop.imgLink}} alt=""> --}}
+        <p>{{url}}</p>
+    </div>
+    <div class="text-center">
+        <a class="action-btn btn btn-info" href="/{{linkId}}/edit">EDIT</a>
+        <form class="delete-form"action="/{{linkId}}?_method=DELETE" method="POST">
+            <input class="action-btn btn btn-danger" type="submit" value="DELETE">
+        </form>
+    </div>
+
+    <p>{{description}}</p>
+    
+    </div>
+</div>

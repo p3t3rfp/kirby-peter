@@ -19,25 +19,25 @@ const firstOne = new Link({
     date: Date.now()
 })
 const secondOne = new Link({
-    url: 'https://thepizzasnob.files.wordpress.com/2012/08/putdooes-resize.jpg',
+    url: 'https://second/url.com',
     title: 'second post',
     desc: '2',
     date: Date.now()
 })
 const thirdOne = new Link({
-    url: 'https://thepizzasnob.files.wordpress.com/2012/08/putdooes-resize.jpg',
+    url: 'https://third/url.com',
     title: 'third post',
     desc: '3',
     date: Date.now()
 })
 const fourthOne = new Link({
-    url: 'https://thepizzasnob.files.wordpress.com/2012/08/putdooes-resize.jpg',
+    url: 'https://fourth/url.com',
     title: 'fourth post',
     desc: '4',
     date: Date.now()
 })
 const fifthOne = new Link({
-    url: 'https://thepizzasnob.files.wordpress.com/2012/08/putdooes-resize.jpg',
+    url: 'https://fifth/url.com',
     title: 'fif post',
     desc: '5',
     date: Date.now()
