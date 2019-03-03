@@ -8,7 +8,7 @@ router.get("/", linkController.index)
 // router.post("/",linkController.create)
 router.get("/:linkId", linkController.show)
 router.get("/:linkId/edit", linkController.edit)
-// router.put('/:linkId', linkController.update)
+router.put('/:linkId', linkController.update)
 // router.delete("/:linkId", linkController.delete)
 
 

@@ -20,10 +20,15 @@ const linkController = {
             })
     },
     edit: (req, res) => {
-        res.send('edit form')
+        Link.findById(req.params.linkId).then(link => {
+            res.render('edit',{link})
+
+        })
     },
     update: (req, res) => {
-        res.send('update post')
+        Link.findByIdAndUpdate(req.params.linkId, req.body, {new:true}).then(()=> {
+            res.redirect(`/${req.params.linkId}`)
+        })
     },
     delete: (req, res) => {
         res.send('deleted post')

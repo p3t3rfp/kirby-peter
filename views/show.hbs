@@ -1,4 +1,35 @@
 <div class="container">
+    <a class="btn btn-info" href="/new">+ Add Thought</a>
+
+    <h2 class="text-center">Stupid people's thoughts</h2>
+
+    
+        <div class="row review">
+            <div class="col-sm-8">
+            <div class="col-sm-4">
+                <p><a href="#">{{link.url}}</a></p>
+            </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>
+                            <a href='/{{link._id}}'>{{link.title}}</a>
+                        </h4>
+                        {{link.date}}
+                    </div>
+                    <div class="col-sm-6">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col review-quote">
+                        {{link.desc}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+<div class="container">
     {{!-- <h2 class="text-center">{{link.title}}</h2> --}}
     <div class="text-center">
         {{!-- <img class="shop-img-banner" src={{shop.imgLink}} alt=""> --}}
