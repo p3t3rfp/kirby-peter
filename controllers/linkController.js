@@ -20,27 +20,24 @@ const linkController = {
             })
     },
     edit: (req, res) => {
+        let { linkId } = req.params
         Link.findById(req.params.linkId).then(link => {
-            res.render('edit',{link})
+            res.render('edit',{link, linkId})
 
         })
     },
     update: (req, res) => {
-        Link.findByIdAndUpdate(req.params.linkId, req.body, {new:true}).then(()=> {
+        Link.findByIdAndUpdate(req.params.linkId, req.body, {new:true})
+        .then(()=> {
             res.redirect(`/${req.params.linkId}`)
         })
     },
     delete: (req, res) => {
-        res.send('deleted post')
+        Link.findByIdAndDelete(req.params.linkId).then(() => {
+            res.redirect('/')
+        })
     },
 
 }
 
 module.exports = linkController 
-
-// show: (req, res) => {
-//     let { shopId } = req.params
-//     Shop.findById(req.params.shopId)
-//         .then(shop => {
-//             res.render('show', { shop, shopId })
-//         })
